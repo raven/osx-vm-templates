@@ -15,9 +15,9 @@
       "tools_upload_flavor": "darwin",
       "type": "vmware-iso",
       "vmx_data": {
-        "cpuid.coresPerSocket": "1",
-        "memsize": "2048",
-        "numvcpus": "1",
+        "cpuid.coresPerSocket": "2",
+        "memsize": "4096",
+        "numvcpus": "2",
         "firmware": "efi",
         "keyboardAndMouseProfile": "macProfile",
         "smc.present": "TRUE",
@@ -29,9 +29,6 @@
     }
   ],
   "min_packer_version": "0.7.0",
-  "post-processors": [
-    "vagrant"
-  ],
   "provisioners": [
     {
       "type": "shell-local",
@@ -73,7 +70,7 @@
     "hiera_version": "none",
     "install_vagrant_keys": "true",
     "install_xcode_cli_tools": "true",
-    "iso_url": "OSX_InstallESD_10.11.1_15B42.dmg",
+    "iso_url": "../out/OSX_InstallESD_10.11.5_15F34.dmg",
     "password": "vagrant",
     "provisioning_delay": "0",
     "update_system": "true",
